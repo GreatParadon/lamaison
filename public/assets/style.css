@@ -1,0 +1,104 @@
+@import 'https://fonts.googleapis.com/css?family=Kanit';
+
+body {
+    font-family: 'bell', 'supermarket', sans-serif;
+    background-color: #1e1e1e;
+    color: #ceae5b;
+    font-size: 15px;
+}
+
+.navbar {
+    background-color: #1b1b1b;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.nav > li > a {
+    border-radius: 0px;
+    color: #ceae5b;
+    background-color: #161616;
+    border-left: 2px solid #1d1d1d;
+}
+
+.nav > li > a:hover {
+    color: #161616;
+    background-color: #ceae5b;
+}
+
+.nav > li > a:active {
+    color: #161616;
+    background-color: #ceae5b;
+}
+
+.nav > li > a:focus {
+    color: #161616;
+    background-color: #ceae5b;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    /* background-color: #eee; */
+     border-color: #161616;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #161616;
+    background-color: #ceae5b;
+}
+
+.dropdown-menu {
+    background-color: #161616;
+    border-radius: 0px;
+}
+
+.dropdown-menu > li > a {
+    color: #ceae5b;
+}
+
+.dropdown-menu > li > a:hover {
+    color: #161616;
+    background-color: #ceae5b;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    color: #161616;
+    background-color: #ceae5b;
+}
+
+footer {
+    /*margin-top: 30px;*/
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+footer .container .row {
+    margin-top: 40px;
+}
+
+.footer_1 {
+    padding-left: 30px;
+    text-align: left;
+}
+
+.footer_3 {
+    padding-right: 30px;
+    text-align: right;
+}
+
+.footer_3 a {
+    margin-left: 30px;
+}
+
+.room {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.room div img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
