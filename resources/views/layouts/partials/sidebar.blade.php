@@ -6,9 +6,7 @@
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            @foreach([
-                'contact' => [['contact', 'Contact Us']]
-            ] as $permKey=>$menus)
+            @foreach(config('sidebar') as $permKey => $menus)
                 @foreach($menus as $menu)
                     @if(isset($menu[2]))
                         <li class="treeview {{Request::is("admin/".$menu[0])?'active':''}}">

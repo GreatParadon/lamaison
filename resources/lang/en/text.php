@@ -17,11 +17,12 @@ return [
     'contact' => 'CONTACT US',
 
     /*Footer*/
-    'footer_desc' => 'Most of its proximity mountains natural touch Winter fog over the city of worship -.Brmtatu Doi Suthep, enjoy the atmosphere. campus Experience of The above With very different tastes modern',
-    'footer_address' => 'Pajjai 4 Property Limited.
-                         12/6 Soi 9 Road. Nimmanheamin York.
-                         Sub. Suthep., Chiangmai.
-                         50200 ',
+    'footer_desc' => 'Located in a prime location surrounded by Mountain View, experience cool weather which northern Thailand is known for. Very close to Doi Suthep, take pleasure with the wonderful atmosphere around the campus.',
+    'footer_address' => 'Patjai 4 Property Limited.
+                         12/6 soi 9 Nimmanhaemin Road.
+                         Suthep Sub-district,
+                         Muang Chiang Mai District,
+                         Chiang Mai, 50200',
 
     /*Room Name*/
     'onebedroom' => 'ONE BEDROOM',
@@ -30,10 +31,10 @@ return [
     'studio' => 'STUDIO',
 
     /*Room Desc*/
-    'onebedroom_desc' => 'Create furniture designs are modern and elegant answer to function fully and to use materials (furniture and room decor) quality.',
-    'duplex_desc' => 'With the advanced technology of the future Discover the lives of young people by meticulously. Furniture brands with an added dimension of life that stand out. Different levels',
-    'penthouse_desc' => 'The rooms are designed like a floating paradise attached to nature and the mountains. Overlooking the surrounding atmosphere CMU Pui Doi Suthep. And a new road to the Nimmanhaemin.',
-    'studio_desc' => 'Design, function and usability. Space is limited so comfortable and practical considerations. The use of a mainly enhanced bathroom design with glass frontages. It makes the room feel Airy, elegant and stylish',
+    'onebedroom_desc' => 'Created on furniture design that elegance and modernly. Answer to function fully that used high quality materials. Enjoy cooking with kitchen which used the famous brand for good life',
+    'duplex_desc' => 'State of the art technology for new-aged people’ lifestyle with exquisite and charming design of famous brand-named furniture, in addition unique with double-floored room which could support your opulent lifestyle.',
+    'penthouse_desc' => 'Room offer panoramic view of Chiang Mai University, Doi Pui Sthup Temple and Nimmanhaemin Road.',
+    'studio_desc' => 'Space was designed for the best utilization with fitting room size for your convenience. Bathrooms are decorated with big clear mirror to enhance spacious, relaxing and modern sensation.',
 
     'readmore' => 'Read More',
 
@@ -46,11 +47,9 @@ return [
     'submit' => 'Submit',
 
     /*MAP*/
-    'map_desc' => 'Experience of the above.
-                    With modern tastes. A luxury condominium
-                    Located next to the University closer to the mountain. natural touch
-                    Winter mist of the North Worship Phra That Doi Suthep
-                    Enjoy the atmosphere around campus',
+    'map_desc' => 'Located in a prime location surrounded by Mountain View, 
+                    experience cool weather which northern Thailand is known for. Very close to Doi Suthep, 
+                    take pleasure with the wonderful atmosphere around the campus.',
 
     'area' => 'Area : :area sq.m',
 

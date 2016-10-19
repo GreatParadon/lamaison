@@ -39,20 +39,17 @@
     function deletePopUp(id) {
         var confirm = window.confirm('Did you want to Delete this image ?');
         if (confirm == true) {
-            var confirm_2 = window.confirm('Delete this image ?');
-            if (confirm_2 == true) {
-                $.ajax({
-                    url: '{{ url('admin/gallery') }}/' + id,
-                    data: {'_token': '{{ csrf_token() }}'},
-                    type: 'DELETE',
-                    success: function (result) {
-                        alert(result.message);
-                        $('#' + id).remove();
-                    }, error: function () {
-                        alert('Delete Failed');
-                    }
-                });
-            }
+            $.ajax({
+                url: '{{ url('admin/gallery') }}/' + id,
+                data: {'_token': '{{ csrf_token() }}'},
+                type: 'DELETE',
+                success: function (result) {
+                    alert(result.message);
+                    $('#' + id).remove();
+                }, error: function () {
+                    alert('Delete Failed');
+                }
+            });
         }
     }
 

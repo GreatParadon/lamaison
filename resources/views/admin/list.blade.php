@@ -46,9 +46,6 @@
         @endif
         </tbody>
     </table>
-
-    {{ $select->links() }}
-
     <script type="application/javascript">
 
         function deleteData(id) {

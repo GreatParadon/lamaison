@@ -13,7 +13,7 @@
             {!! method_field('PUT') !!}
         @endif
         {{ csrf_field() }}
-        <table class="table table-responsive table-hover no-border">
+        <table class="table table-hover no-border">
             @foreach($form_data as $form)
                 <tr>
                     @if($form['type'] == 'image')
@@ -220,6 +220,34 @@
             </tr>
         </table>
     </form>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>รูปสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>จำนวน</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($product_cart as $r)
+            <tr>
+                <td>{{ $r->id or '' }}</td>
+                <td><img src="{{ url('content/subcategory').'/'.$r->image }}" width="75" height="75"></td>
+                <td>{{ $r->title or '' }}</td>
+                <td>
+                    {{ number_format($r->cost * $r->pieces,2) }} บาท
+                </td>
+                <td>
+                    {{ $r->pieces or '' }}
+                </td>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
+
     <script>
         function sendFile(file, url, editor) {
             $("body").css("cursor", "progress");

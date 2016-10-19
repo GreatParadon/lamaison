@@ -77,29 +77,28 @@ class BaseController extends Controller
 
         $select = $this->listQuery($list_data);
 
-//        dd($select);
         foreach ($select as $r) {
             foreach ($list_data->values() as $l) {
-//                dd($l);
                 if ($l['type'] == 'image') {
-                    if(!$r->$l['field']){
-                        $r->$l['field'] = 'No Image';
-                    }else{
-                        $r->$l['field'] = '<a href="' . filePath($this->page['content'], $r->$l['field']) . '" data-lightbox="' . $l['field'] . '">
-                        <img src="' . filePath($this->page['content'], $r->$l['field']) . '" width="50">
+                    if (!$r->{$l['field']}) {
+                        $r->{$l['field']} = 'No Image';
+                    } else {
+                        $r->{$l['field']} = '<a href="' . filePath($this->page['content'], $r->{$l['field']}) . '" data-lightbox="' . $l['field'] . '">
+                        <img src="' . filePath($this->page['content'], $r->{$l['field']}) . '" width="50">
                         </a>';
                     }
                 }
 
                 if ($l['type'] == 'checkbox') {
-                    if ($r->$l['field'] == 1) {
-                        $r->$l['field'] = '<span class="label label-success">' . $l['label'] . '</span>';
+                    if ($r->{$l['field']} == 1) {
+                        $r->{$l['field']} = '<span class="label label-success">' . $l['label'] . '</span>';
                     } else {
-                        $r->$l['field'] = '<span class="label label-danger">' . $l['label'] . '</span>';
+                        $r->{$l['field']} = '<span class="label label-danger">' . $l['label'] . '</span>';
                     }
                 }
             }
         }
+
         return view('admin.' . $list_view, compact('list_data', 'page', 'select', 'create', 'edit', 'delete', 'sort'));
     }
 
@@ -168,8 +167,6 @@ class BaseController extends Controller
         if ($gallery == true) {
             $galleries = $this->galleryQuery($id);
         }
-
-//        dd($galleries);
         $form_data = $this->formData()->values()->all();
         $form_view = $this->form_view;
 
@@ -244,16 +241,16 @@ class BaseController extends Controller
         foreach ($select as $r) {
             foreach ($list_data->values() as $l) {
                 if ($l['type'] == 'image') {
-                    $r->$l['field'] = '<a href="' . filePath($this->page['content'], $r->$l['field']) . '" data-lightbox="' . $l['field'] . '">
-                        <img src="' . filePath($this->page['content'], $r->$l['field']) . '" width="20">
+                    $r->{$l['field']} = '<a href="' . filePath($this->page['content'], $r->{$l['field']}) . '" data-lightbox="' . $l['field'] . '">
+                        <img src="' . filePath($this->page['content'], $r->{$l['field']}) . '" width="20">
                         </a>';
                 }
 
                 if ($l['type'] == 'checkbox') {
-                    if ($r->$l['field'] == 1) {
-                        $r->$l['field'] = '<span class="label label-success">' . $l['label'] . '</span>';
+                    if ($r->{$l['field']} == 1) {
+                        $r->{$l['field']} = '<span class="label label-success">' . $l['label'] . '</span>';
                     } else {
-                        $r->$l['field'] = '<span class="label label-danger">' . $l['label'] . '</span>';
+                        $r->{$l['field']} = '<span class="label label-danger">' . $l['label'] . '</span>';
                     }
                 }
             }

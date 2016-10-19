@@ -3,7 +3,7 @@
 @section('content')
     <div class="login-box">
         <div class="login-logo">
-            <a href="#"><b>La Maison De Valle</b></a>
+            <a href="#"><b>{{ env('PROJECT_NAME', 'GREAT') }}</b></a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
