@@ -67,11 +67,11 @@
                     _token: '{{ csrf_token() }}'
                 }, success: function () {
                     alert('เราจะติดต่อกลับไปทางอีเมลค่ะ ขอบคุณค่ะ');
-                    window.location.href = '{{ url('') }}';
                 }, error: function () {
                     alert('เราจะติดต่อกลับไปทางอีเมลค่ะ ขอบคุณค่ะ');
                 }
-            })
+            });
+            window.location.href = '{{ url('') }}';
         })
     </script>
 @stop
