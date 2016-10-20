@@ -65,12 +65,9 @@
                     topic: $("#topic").val(),
                     message: $("#message").val(),
                     _token: '{{ csrf_token() }}'
-                }, success: function () {
-                    alert('เราจะติดต่อกลับไปทางอีเมลค่ะ ขอบคุณค่ะ');
-                }, error: function () {
-                    alert('เราจะติดต่อกลับไปทางอีเมลค่ะ ขอบคุณค่ะ');
                 }
             });
+            alert('เราจะติดต่อกลับไปทางอีเมลค่ะ ขอบคุณค่ะ');
             window.location.href = '{{ url('') }}';
         })
     </script>
