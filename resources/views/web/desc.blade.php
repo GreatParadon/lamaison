@@ -13,7 +13,7 @@
 
         <div class="row">
             <div class="col-md-12" style="text-align: center; padding: 100px">
-                <img src="{{ asset('resources/des.png') }}" style="width: 100%; opacity: 0.8">
+                <img src="@if(trans('text.desc_img') == 1) {{ asset('resources/desc_th.png') }} @else {{ asset('resources/desc_en.png') }} @endif" style="width: 100%; opacity: 0.8">
             </div>
         </div>
 @stop

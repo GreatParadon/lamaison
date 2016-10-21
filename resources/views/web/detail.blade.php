@@ -14,7 +14,7 @@
     <div class="desc_container">
         <div class="row">
             <div class="col-md-12" style="text-align: center; padding: 100px">
-                <img src="{{ asset('resources/detail.png') }}" style="width: 100%; opacity: 0.8">
+                <img src="@if(trans('text.detail_img') == 1) {{ asset('resources/detail_th.png') }} @else {{ asset('resources/detail_en.png') }} @endif" style="width: 100%; opacity: 0.8">
             </div>
         </div>
     </div>

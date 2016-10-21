@@ -53,5 +53,12 @@ return [
 
     'area' => 'Area : :area sq.m',
 
+    /*DESC_IMG*/
+    'desc_img' => 0,
 
+    /*DETAIL_IMG*/
+    'detail_img' => 0,
+
+    /*FACILITY_IMG*/
+    'facility_img' => 0
 ];
