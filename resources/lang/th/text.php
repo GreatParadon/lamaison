@@ -59,11 +59,11 @@ return [
     'area' => 'ขนาด : :area ตร.ม',
 
     /*DESC_IMG*/
-    'desc_img' => 1,
+    'desc_img' => '1',
 
     /*DETAIL_IMG*/
-    'detail_img' => 1,
+    'detail_img' => '1',
 
     /*FACILITY_IMG*/
-    'facility_img' => 1
+    'facility_img' => '1'
 ];
