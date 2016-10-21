@@ -28,7 +28,7 @@
     <div class="facility_container">
         <div class="row">
             <div class="col-md-12" style="text-align: center; padding: 100px">
-                <img src="@if(trans('text.facility_img') == 1) {{ asset('resources/facility_th.png') }} @else {{ asset('resources/facility_en.png') }} @endif" style="width: 100%; opacity: 0.8">
+                <img src="@if(trans('text.facility_img') == 1) {{ asset('resources/facility_th.png') }} @else {{ asset('resources/facility_en.jpg') }} @endif" style="width: 100%; opacity: 0.8">
             </div>
         </div>
         <div class="row">
