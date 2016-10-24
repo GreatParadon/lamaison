@@ -18,12 +18,19 @@
     <div class="row">
         <div class="col-md-4">
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLa-Maison-De-VALLE-546413978892930%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=977149125690271"
-                    style="width: 100%; height: 410px;border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    style="width: 100%; height: 496px;border:none;overflow:hidden" scrolling="no" frameborder="0"
                     allowTransparency="true"></iframe>
         </div>
         <div class="col-md-8">
+            <div id="owl-demo2" class="owl-carousel owl-theme">
+                @foreach([1,2,3,4,5] as $r)
+                    <div class="item"><img src="{{ asset('resources/vdo_replace').'/pic'.$r.'.jpg' }}"
+                                           style="width: 100%"></div>
+                @endforeach
+            </div>
+
             {{--<iframe style="width: 100%; height: 410px;" src="https://www.youtube.com/embed/P9skCMXnu4E" frameborder="0"--}}
-                    {{--allowfullscreen></iframe>--}}
+            {{--allowfullscreen></iframe>--}}
             {{--<video style="width: 100%; height: 100%" controls>--}}
             {{--<source src="{{ asset('resources/vdo.mp4') }}" type="video/mp4">--}}
             {{--</video>--}}
@@ -61,10 +68,20 @@
         $(document).ready(function () {
 
             $("#owl-demo").owlCarousel({
+                slideSpeed: 200,
+                paginationSpeed: 800,
+                singleItem: true,
+                pagination: true
 
-                slideSpeed: 300,
+            });
+
+            $("#owl-demo2").owlCarousel({
+
+                autoPlay: true,
+                slideSpeed: 200,
                 paginationSpeed: 400,
-                singleItem: true
+                singleItem: true,
+                pagination: false
 
             });
 
